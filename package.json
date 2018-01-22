@@ -1,0 +1,28 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "main component for building our apps",
+  "main": "index.js",
+  "engines": {
+    "node": "9.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashemirafsan/realtime-restora.git"
+  },
+  "author": "Hashemi Rafsan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hashemirafsan/realtime-restora/issues"
+  },
+  "homepage": "https://github.com/hashemirafsan/realtime-restora#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.2",
+    "socket.io": "^2.0.1",
+    "vue": "^2.3.3"
+  }
+}
