@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">Add Check</button>
+    <script src="./node_modules/socket.io-client/dist/socket.io.js""></script>
+    <script>
+        var socket = io("ws://localhost:9000")
+        socket.on('test', function(e) {
+            console.log(e);
+        })
+
+        socket.on('disconnected', function(e) {
+            console.log(e)
+        })
+
+        document.getElementById('button').addEventListener('click',function(e) {
+            console.log(e)
+            socket.emit('test', e)
+        })
+    </script>
+</body>
+</html>
