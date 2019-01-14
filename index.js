@@ -37,7 +37,7 @@ io.on('connection', function(socket) {
     })
 
     socket.on('test', function(e) {
-        socket.emit('rafsan', {
+        socket.broadcast.emit('rafsan', {
             message: 'Hello world'
         })
     })
