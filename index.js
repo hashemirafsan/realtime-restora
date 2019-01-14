@@ -32,9 +32,7 @@ io.on('connection', function(socket) {
 
 
     console.log('connected')
-    socket.emit('test', {
-        l: 'hello'
-    })
+    socket.broadcast.emit('test', 'connected');
 
     socket.on('test', function(e) {
         socket.broadcast.emit('rafsan', {
