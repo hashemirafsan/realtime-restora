@@ -10,7 +10,7 @@
     <button id="button">Add Check</button>
     <script src="./node_modules/socket.io-client/dist/socket.io.js""></script>
     <script>
-        var socket = io("ws://localhost:9000")
+        var socket = io("ws://realtime-ea.herokuapp.com")
         socket.on('test', function(e) {
             console.log(e);
         })

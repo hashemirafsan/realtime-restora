@@ -37,8 +37,12 @@ io.on('connection', function(socket) {
     })
 
     socket.on('test', function(e) {
-        console.log('tatattatat')
+        socket.emit('rafsan', {
+            message: 'Hello world'
+        })
     })
+
+
     // let id = socket.handshake.query.userId;
     // socket.emit('online-users', getUsers());
     // ConnectedUsers[id] = socket.id;
